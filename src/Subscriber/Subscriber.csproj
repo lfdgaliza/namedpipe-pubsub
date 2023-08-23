@@ -8,4 +8,8 @@
         <RootNamespace>Client1</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+        <PackageReference Include="Polly" Version="7.2.4"/>
+    </ItemGroup>
+
 </Project>
