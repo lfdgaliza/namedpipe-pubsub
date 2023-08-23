@@ -12,4 +12,8 @@
         <PackageReference Include="Polly" Version="7.2.4"/>
     </ItemGroup>
 
+    <ItemGroup>
+        <ProjectReference Include="..\MessageHandler\MessageHandler.csproj"/>
+    </ItemGroup>
+
 </Project>

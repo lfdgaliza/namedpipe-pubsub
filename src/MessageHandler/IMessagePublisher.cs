@@ -1,4 +1,4 @@
-namespace Producer;
+namespace PublishSubscribe.MessageHandler;
 
 public interface IMessagePublisher
 {

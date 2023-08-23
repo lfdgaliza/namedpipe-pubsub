@@ -3,15 +3,17 @@ using System.IO.Pipes;
 using Polly;
 using Polly.Timeout;
 
-namespace Producer;
+namespace PublishSubscribe.MessageHandler;
 
-public class MessagePublisher : IMessagePublisher
+public sealed class MessagePublisher : IMessagePublisher
 {
     private readonly ConcurrentDictionary<string, bool> _subscribers = new();
+    private readonly string _topic;
     private bool _canDiscover;
 
-    public MessagePublisher()
+    public MessagePublisher(string topic)
     {
+        _topic = topic;
         StartDiscoveringSubscribers();
     }
 
@@ -63,7 +65,7 @@ public class MessagePublisher : IMessagePublisher
             // TODO: Try/Catch
             try
             {
-                using var pipeClient = new NamedPipeClientStream(".", "connect", PipeDirection.In);
+                using var pipeClient = new NamedPipeClientStream(".", _topic, PipeDirection.In);
                 using var reader = new StreamReader(pipeClient);
                 pipeClient.Connect();
                 if (!pipeClient.IsConnected) continue;
