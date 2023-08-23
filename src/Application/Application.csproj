@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AssemblyName>PublishSubscribe.Application</AssemblyName>
+        <RootNamespace>PublishSubscribe.Application</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="IMessageHandler.cs" />
+    </ItemGroup>
+
+</Project>
