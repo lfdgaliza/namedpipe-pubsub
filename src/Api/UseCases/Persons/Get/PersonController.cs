@@ -1,9 +1,9 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using PublishSubscribe.Application.UseCases.Persons.Get;
-using PublishSubscribe.Domain;
+using PublishSubscribe.Domain.Aggregates.PersonAggregate;
 
-namespace PublishSubscribe.Api.UseCases.Persons.Get;
+namespace PublishSubscribe.IO.Api.UseCases.Persons.Get;
 
 [ApiController]
 [Route("person")]

@@ -1,4 +1,4 @@
-namespace PublishSubscribe.Domain;
+namespace PublishSubscribe.Domain.Aggregates.PersonAggregate;
 
 public sealed class Person : EntityBase, IAggregateRoot
 {

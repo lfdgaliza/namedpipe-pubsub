@@ -5,7 +5,8 @@
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>Client1</RootNamespace>
+        <RootNamespace>PublishSubscribe.IO.Subscriber</RootNamespace>
+        <AssemblyName>PublishSubscribe.IO.Subscriber</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

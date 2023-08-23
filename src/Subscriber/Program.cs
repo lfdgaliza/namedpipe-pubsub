@@ -1,4 +1,4 @@
-﻿using PublishSubscribe.MessageHandler;
+﻿using PublishSubscribe.Infra.MessageHandler;
 
 // Console.Write("Subscribe to: ");
 // var topicName = Console.ReadLine();

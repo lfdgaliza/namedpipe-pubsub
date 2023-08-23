@@ -1,4 +1,4 @@
-namespace PublishSubscribe.MessageHandler;
+namespace PublishSubscribe.Infra.MessageHandler;
 
 public interface ISubscription
 {

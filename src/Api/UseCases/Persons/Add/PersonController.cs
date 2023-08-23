@@ -2,7 +2,7 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using PublishSubscribe.Application.UseCases.Persons.Add;
 
-namespace PublishSubscribe.Api.UseCases.Persons.Add;
+namespace PublishSubscribe.IO.Api.UseCases.Persons.Add;
 
 [ApiController]
 [Route("person")]

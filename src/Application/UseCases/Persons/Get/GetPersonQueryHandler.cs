@@ -1,10 +1,10 @@
 using MediatR;
-using PublishSubscribe.Domain;
-using PublishSubscribe.Domain.Repositories;
+using PublishSubscribe.Domain.Aggregates.PersonAggregate;
+using PublishSubscribe.Domain.Aggregates.PersonAggregate.Repositories;
 
 namespace PublishSubscribe.Application.UseCases.Persons.Get;
 
-public class GetPersonQueryHandler : IRequestHandler<GetPersonQuery, Unit>
+public sealed class GetPersonQueryHandler : IRequestHandler<GetPersonQuery, Unit>
 {
     private readonly IFindPerson _findPerson;
 

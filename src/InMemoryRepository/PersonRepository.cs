@@ -1,7 +1,7 @@
-using PublishSubscribe.Domain;
-using PublishSubscribe.Domain.Repositories;
+using PublishSubscribe.Domain.Aggregates.PersonAggregate;
+using PublishSubscribe.Domain.Aggregates.PersonAggregate.Repositories;
 
-namespace InMemoryRepository;
+namespace PublishSubscribe.Plugins.InMemoryRepository;
 
 public class PersonRepository : RepositoryBase<Person>, IAddPerson, IFindPerson
 {

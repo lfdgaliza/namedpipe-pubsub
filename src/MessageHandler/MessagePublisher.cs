@@ -3,7 +3,7 @@ using System.IO.Pipes;
 using Polly;
 using Polly.Timeout;
 
-namespace PublishSubscribe.MessageHandler;
+namespace PublishSubscribe.Infra.MessageHandler;
 
 public sealed class MessagePublisher : IMessagePublisher
 {
@@ -62,7 +62,6 @@ public sealed class MessagePublisher : IMessagePublisher
     {
         while (_canDiscover)
         {
-            // TODO: Try/Catch
             try
             {
                 using var pipeClient = new NamedPipeClientStream(".", _topic, PipeDirection.In);

@@ -1,4 +1,4 @@
-using PublishSubscribe.MessageHandler;
+using PublishSubscribe.Infra.MessageHandler;
 
 namespace Microsoft.Extensions.DependencyInjection;
 

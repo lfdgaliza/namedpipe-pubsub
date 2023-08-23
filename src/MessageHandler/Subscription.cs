@@ -2,7 +2,7 @@ using System.IO.Pipes;
 using Polly;
 using Polly.Timeout;
 
-namespace PublishSubscribe.MessageHandler;
+namespace PublishSubscribe.Infra.MessageHandler;
 
 public class Subscription : ISubscription
 {

@@ -1,10 +1,10 @@
 using MediatR;
-using PublishSubscribe.Domain;
-using PublishSubscribe.Domain.Repositories;
+using PublishSubscribe.Domain.Aggregates.PersonAggregate;
+using PublishSubscribe.Domain.Aggregates.PersonAggregate.Repositories;
 
 namespace PublishSubscribe.Application.UseCases.Persons.Add;
 
-public class AddPersonCommandHandler : IRequestHandler<AddPersonCommand, Person>
+public sealed class AddPersonCommandHandler : IRequestHandler<AddPersonCommand, Person>
 {
     private readonly IAddPerson _addPerson;
     private readonly IMediator _mediator;
