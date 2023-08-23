@@ -9,7 +9,16 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Compile Remove="IMessageHandler.cs" />
+        <Compile Remove="IMessageHandler.cs"/>
     </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MediatR" Version="12.1.1"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Domain\Domain.csproj"/>
+    </ItemGroup>
+
 
 </Project>

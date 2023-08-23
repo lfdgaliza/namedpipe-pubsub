@@ -14,7 +14,10 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\MessageHandler\MessageHandler.csproj" />
+        <ProjectReference Include="..\InMemoryRepository\InMemoryRepository.csproj"/>
+        <ProjectReference Include="..\MessageHandler\MessageHandler.csproj"/>
+        <ProjectReference Include="..\PubSub\PubSub.csproj"/>
     </ItemGroup>
+
 
 </Project>
