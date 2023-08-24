@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PubSub", "PubSub\PubSub.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InMemoryRepository", "InMemoryRepository\InMemoryRepository.csproj", "{CF2D3AC5-868A-413C-8406-1B1F067B94A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{F711C584-1BAF-48C6-8B98-6E3F062E11BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +56,10 @@ Global
 		{CF2D3AC5-868A-413C-8406-1B1F067B94A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF2D3AC5-868A-413C-8406-1B1F067B94A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF2D3AC5-868A-413C-8406-1B1F067B94A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F711C584-1BAF-48C6-8B98-6E3F062E11BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F711C584-1BAF-48C6-8B98-6E3F062E11BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F711C584-1BAF-48C6-8B98-6E3F062E11BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F711C584-1BAF-48C6-8B98-6E3F062E11BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{20475E0C-133D-4406-9734-581ABF2D77D9} = {20FB1E10-1152-4A03-9120-5B04030B8B31}
