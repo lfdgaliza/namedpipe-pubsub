@@ -18,10 +18,18 @@ public sealed class GetPersonQueryHandler : IRequestHandler<GetPersonQuery, Unit
         var person = _findPerson.Execute(request.Id);
 
         if (person is null)
+        {
             request.OutputPort.NotFound();
+            return Unit.Task;
+        }
 
-        request.OutputPort.Found(person!);
+        if (person!.Name == "Elizabeth II")
+        {
+            request.OutputPort.TeaPot();
+            return Unit.Task;
+        }
 
+        request.OutputPort.Found(person);
         return Unit.Task;
     }
 }
@@ -30,4 +38,5 @@ public interface IGetPersonQueryOutputPort
 {
     void Found(Person person);
     void NotFound();
+    void TeaPot();
 }

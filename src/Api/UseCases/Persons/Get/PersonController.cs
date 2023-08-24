@@ -11,7 +11,7 @@ public class PersonController : ControllerBase, IGetPersonQueryOutputPort
 {
     private readonly ILogger<PersonController> _logger;
     private readonly IMediator _mediator;
-    private IActionResult? result;
+    private IActionResult? _result;
 
     public PersonController(ILogger<PersonController> logger, IMediator mediator)
     {
@@ -22,13 +22,19 @@ public class PersonController : ControllerBase, IGetPersonQueryOutputPort
     [ApiExplorerSettings(IgnoreApi = true)]
     public void Found(Person person)
     {
-        result = Ok(person);
+        _result = Ok(person);
     }
 
     [ApiExplorerSettings(IgnoreApi = true)]
     public new void NotFound()
     {
-        result = base.NotFound();
+        _result = base.NotFound();
+    }
+
+    [ApiExplorerSettings(IgnoreApi = true)]
+    public void TeaPot()
+    {
+        _result = StatusCode(StatusCodes.Status418ImATeapot);
     }
 
     [HttpGet]
@@ -37,6 +43,6 @@ public class PersonController : ControllerBase, IGetPersonQueryOutputPort
     public IActionResult Get(Guid id)
     {
         _mediator.Send(new GetPersonQuery(id, this));
-        return result!;
+        return _result!;
     }
 }

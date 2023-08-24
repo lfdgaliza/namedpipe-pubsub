@@ -54,3 +54,5 @@ It doesn't matter because the Message Handler has an autodiscovery mechanism.
 * Polly: To add some policies (to speed me up)
 * Mediatr: To handle the commands, queries and notifications
 * xUnit: To test
+* Moq : To mock
+* FluentAssertions: Because I like it
