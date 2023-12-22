@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 using MediatR;
-using PublishSubscribe.Application.UseCases.Persons.Add;
+using PublishSubscribe.Application.UseCases.People.Add;
 using PublishSubscribe.Infra.MessageHandler;
 
 namespace PublishSubscribe.Plugins.PubSub;

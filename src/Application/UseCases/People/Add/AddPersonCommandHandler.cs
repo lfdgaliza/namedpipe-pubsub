@@ -2,7 +2,7 @@ using MediatR;
 using PublishSubscribe.Domain.Aggregates.PersonAggregate;
 using PublishSubscribe.Domain.Aggregates.PersonAggregate.Repositories;
 
-namespace PublishSubscribe.Application.UseCases.Persons.Add;
+namespace PublishSubscribe.Application.UseCases.People.Add;
 
 public sealed class AddPersonCommandHandler : IRequestHandler<AddPersonCommand, Person>
 {

@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>net7.0</TargetFramework>
+        <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <RootNamespace>PublishSubscribe.IO.Subscriber</RootNamespace>
@@ -10,11 +10,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Polly" Version="7.2.4"/>
+        <PackageReference Include="Polly" Version="8.2.0" />
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\MessageHandler\MessageHandler.csproj"/>
+        <ProjectReference Include="..\MessageHandler\MessageHandler.csproj" />
     </ItemGroup>
 
 </Project>
